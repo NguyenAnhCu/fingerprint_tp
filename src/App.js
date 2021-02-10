@@ -36,7 +36,7 @@ function App() {
   return (
     <div>
       <Helmet>
-        <title>App empreinte digitale et adresse MAC </title>
+        <title>Empreinte digitale et adresse MAC </title>
         <meta
           name="description"
           content="Petite React app à collecter l'empreinte digitale et addresse IP metadata"
@@ -76,14 +76,7 @@ function App() {
       <footer>
         <p>
           Créé pour{" "}
-          <a
-            style={{ fontWeight: 'bold' }}
-            target="_blank"
-            rel="noopener noreferrer"
-            href=""
-          >
-            TP de PRM
-          </a>
+            <b>TP de PRM</b>
         </p>
       </footer>
     </div>
