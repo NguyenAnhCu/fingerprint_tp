@@ -21,7 +21,8 @@ function App() {
               ...acc,
               ...curr
             }));
-
+          console.log(ip)
+          console.log(f)
           f = cleanData(f);
           ip = cleanData(ip);
 
@@ -35,10 +36,10 @@ function App() {
   return (
     <div>
       <Helmet>
-        <title>Seanky fingerprint and IP tracker | molamk</title>
+        <title>App empreinte digitale et adresse MAC </title>
         <meta
           name="description"
-          content="Small React app to collect a device's fingerprint and IP address metadata"
+          content="Petite React app à collecter l'empreinte digitale et addresse IP metadata"
         />
         <meta
           name="keywords"
@@ -48,27 +49,24 @@ function App() {
       <header>
         <section>
           <h1>
-            <a target='_blank' rel='noreferrer noopener' href='https://molamk.com/fingerprint'>
-              Sneaky Fingerprint And IP Address Tracker
-            </a>
+              Empreinte digitale et adresse MAC Tracker
           </h1>
           <p>
-            This project is for educational purposes only. No data is being
-            stored.
+              Ce projet est à l'objectif d'éducation.
           </p>
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/molamk/fingerprint"
+            href="https://github.com/NguyenAnhCu/fingerprint_tp"
           >
-            Check out the code on Github
+            Le code sur GitHub
           </a>
         </section>
       </header>
       {ipData && fingerprint ? (
         <div>
-          <DataTable title="IP Data" data={ipData} />
-          <DataTable title="Fingerprint" data={fingerprint} />
+          <DataTable title="IP Données" data={ipData} />
+          <DataTable title="Empreinte Digital" data={fingerprint} />
         </div>
       ) : (
           <section>
@@ -77,14 +75,14 @@ function App() {
         )}
       <footer>
         <p>
-          Made by{" "}
+          Créé pour{" "}
           <a
             style={{ fontWeight: 'bold' }}
             target="_blank"
             rel="noopener noreferrer"
-            href="https://molamk.com"
+            href=""
           >
-            molamk
+            TP de PRM
           </a>
         </p>
       </footer>
